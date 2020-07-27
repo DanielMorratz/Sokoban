@@ -1,0 +1,19 @@
+Q&A:
+Q: Hvorfor pragma og ifndef? 
+A:
+
+Q:Hvorfor ligger det her i header? Hvad bruges header til?
+A:
+
+Q: Hvordan linkes header og cpp filer korrekt sammen?
+A:
+
+Q: Var der ikke noget med at std::endl var dårlig stil?
+A: 
+
+
+Q: Hvad er forskellen på surface og texture?
+A:
+
+// tjek http://esotericsoftware.com/spine-download
+// todo: Find program til animationer (men prøv GIMP først)
