@@ -1,7 +1,6 @@
 #define SDL_MAIN_HANDLED
 #include "game.h"
 
-
 Game* game = nullptr;
 int main()
 {

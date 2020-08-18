@@ -71,8 +71,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Daniel\OneDrive - Aalborg Universitet\C++\SDL\SDL2_image-2.0.5\include;C:\Users\Daniel\OneDrive - Aalborg Universitet\C++\SDL\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Daniel\OneDrive - Aalborg Universitet\C++\SDL\SDL2_image-2.0.5\lib\x86;C:\Users\Daniel\OneDrive - Aalborg Universitet\C++\SDL\SDL2-2.0.10\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Daniel\Documents\GitHub\Sokoban\SDL\SDL2_image-2.0.5\include;C:\Users\Daniel\Documents\GitHub\Sokoban\SDL\SDL2-2.0.10\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Daniel\Documents\GitHub\Sokoban\SDL\SDL2_image-2.0.5\lib\x86;C:\Users\Daniel\Documents\GitHub\Sokoban\SDL\SDL2-2.0.10\lib\x86;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>

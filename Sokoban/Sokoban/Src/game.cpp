@@ -10,6 +10,7 @@ SDL_Renderer* Game::renderer = nullptr;
 Map* map;
 Foreground* foreground;
 GameLogic* gamelogic;
+int stepcounter = 0;
 
 Game::Game()
 {}
@@ -70,24 +71,28 @@ void Game::handleEvents()
 			if (gamelogic->ismovevalid(player->xpos, player->ypos, "up",map->map , foreground->map) == true) 
 			{
 				player->Setposition(0, -32);
+				stepcounter++;
 			}
 			break;
 		case SDLK_DOWN:
 			if (gamelogic->ismovevalid(player->xpos, player->ypos, "down", map->map, foreground->map) == true)
 			{
 				player->Setposition(0, 32);
+				stepcounter++;
 			}
 			break;
 		case SDLK_LEFT:
 			if (gamelogic->ismovevalid(player->xpos, player->ypos, "left", map->map, foreground->map) == true)
 			{
 				player->Setposition(-32, 0);
+				stepcounter++;
 			}
 			break;
 		case SDLK_RIGHT:
 			if (gamelogic->ismovevalid(player->xpos, player->ypos, "right", map->map, foreground->map) == true)
 			{
 				player->Setposition(32, 0);
+				stepcounter++;
 			}
 			break;
 
@@ -105,7 +110,7 @@ void Game::update() // game logic
 	//TODO: islevelcompleted();
 	if (gamelogic->islevelcomplete(foreground->map) == true) {
 		isRunning = false;
-		std::cout << "great job, you did it!\n";
+		std::cout << "great job, you completed the level in " << stepcounter << " steps!\n!";
 	}
 
 }
