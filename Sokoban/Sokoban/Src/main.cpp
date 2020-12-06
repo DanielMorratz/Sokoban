@@ -1,6 +1,7 @@
 #define SDL_MAIN_HANDLED
 #include "game.h"
-
+//Todo til level editor: Læs op på Factory pattern.	 https://stackoverflow.com/questions/4007382/how-to-create-class-objects-dynamically
+//													 https://www.javatpoint.com/factory-method-design-pattern
 Game* game = nullptr;
 int main()
 {

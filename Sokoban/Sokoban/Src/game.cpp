@@ -105,9 +105,6 @@ void Game::handleEvents()
 void Game::update() // game logic
 {
 	player->Update();
-	//map->DrawMap();
-	//map->LoadMap(); implement this, so switching between maps is easy.
-	//TODO: islevelcompleted();
 	if (gamelogic->islevelcomplete(foreground->map) == true) {
 		isRunning = false;
 		std::cout << "great job, you completed the level in " << stepcounter << " steps!\n!";
